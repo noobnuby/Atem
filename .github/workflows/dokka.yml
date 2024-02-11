@@ -12,7 +12,7 @@ jobs:
       - name: JDK Setup
         uses: actions/setup-java@v1
         with:
-          java-version: 17
+          java-version: 16
       - run: sudo apt-get install dos2unix
       - name: Dokka Build
         run: |
@@ -23,4 +23,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages
-          folder: build/dokka/html
+          folder: /build/dokka/html
