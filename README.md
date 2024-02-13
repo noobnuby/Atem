@@ -2,7 +2,7 @@
 [![Kotlin](https://img.shields.io/badge/java-17-ED8B00.svg?logo=java)](https://www.azul.com/)
 [![Kotlin](https://img.shields.io/badge/kotlin-1.9.22-585DEF.svg?logo=kotlin)](http://kotlinlang.org)
 [![Gradle](https://img.shields.io/badge/gradle-8.4.0-02303A.svg?logo=gradle)](https://gradle.org)
-[![Maven Central](https://img.shields.io/maven-central/v/io.github.NOOBNUBY/Atem)](https://search.maven.org/artifact/io.github.NOOBNUBY/Atem)
+[![JitPack](https://img.shields.io/jitpack/v/io.github.NOOBNUBY/Atem)](https://search.maven.org/artifact/io.github.NOOBNUBY/Atem)
 [![GitHub](https://img.shields.io/github/license/NOOBNUBY/Atem)](https://www.gnu.org/licenses/gpl-3.0.html)    
 A Papermc Item Library.
 
@@ -30,17 +30,14 @@ This library is licensed under the General Public License v3.0.
 ```XML
 <repositories>
     <repository>
-        <releases>
-            <enabled>true</enabled>
-        </releases>
-        <id>central</id>
-        <url>https://repo.maven.apache.org/maven2</url>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
     </repository>
 </repositories>
 
 <dependency>
-    <groupId>com.noobnuby</groupId>
-    <artifactId>Atem-api</artifactId>
+    <groupId>com.noobnuby.lib</groupId>
+    <artifactId>atem-api</artifactId>
     <version>VERSION</version>
 </dependency>
 ```
@@ -49,10 +46,11 @@ This library is licensed under the General Public License v3.0.
 ```groovy
 repositories {
   mavenCentral()
+  maven { url 'https://jitpack.io' }
 }
 
 dependencies {
-  implementation 'com.noobnuby:Atem-api:VERSION'
+  implementation 'com.noobnuby.lib:atem-api:VERSION'
 }
 ```
 
@@ -60,19 +58,21 @@ dependencies {
 ```kotlin
 repositories {
   mavenCentral()
+  maven("https://jitpack.io")
 }
 
 dependencies {
-  implementation("com.noobnuby:Atem-api:VERSION")
+  implementation("com.noobnuby.lib:atem-api:VERSION")
 }
 ```
 
+### This config is not yet available
 > If you are using spigot/paper 1.17+, you can use the library-loading feature instead of shading.
 * plugin.yml (1.17+)
 ```
 # ...
 libraries:
-  - com.noobnuby:Atem-api:VERSION
+  - com.noobnuby.lib:atem-api:VERSION
 # ...
 ```
 
