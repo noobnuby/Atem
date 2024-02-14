@@ -36,8 +36,8 @@ This library is licensed under the General Public License v3.0.
 </repositories>
 
 <dependency>
-    <groupId>com.noobnuby.lib</groupId>
-    <artifactId>atem-api</artifactId>
+    <groupId>com.github.noobnuby</groupId>
+    <artifactId>atem</artifactId>
     <version>VERSION</version>
 </dependency>
 ```
@@ -50,7 +50,7 @@ repositories {
 }
 
 dependencies {
-  implementation 'com.noobnuby.lib:atem-api:VERSION'
+  implementation 'com.github.noobnuby:atem:VERSION'
 }
 ```
 
@@ -62,7 +62,7 @@ repositories {
 }
 
 dependencies {
-  implementation("com.noobnuby.lib:atem-api:VERSION")
+  implementation("com.github.noobnuby:atem:VERSION")
 }
 ```
 
