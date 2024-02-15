@@ -3,7 +3,6 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     kotlin("jvm") version "1.9.22"
     id("org.jetbrains.dokka") version "1.9.10"
-    id("com.github.johnrengelman.shadow") version "8.1.1"
     `maven-publish`
 }
 
@@ -26,6 +25,19 @@ java {
     }
 }
 
+publishing {
+    publications {
+        create<MavenPublication>(rootProject.name) {
+            artifactId = "atem"
+            groupId = "com.github.noobnuby"
+
+            version = "1.0.0"
+
+            from(components["java"])
+        }
+    }
+}
+
 tasks {
     withType<KotlinCompile> {
         kotlinOptions.jvmTarget = "17"
@@ -40,16 +52,8 @@ tasks {
         from(sourceSets["main"].allSource)
     }
 
-    shadowJar {
-        destinationDirectory.set(file("$rootDir/target"))
-        archiveClassifier.set("")
-        archiveFileName.set("Atem" + "-" + project.version + ".jar")
-    }
-
     create<Jar>("javadocJar") {
         archiveClassifier.set("javadoc")
-        dependsOn("dokkaHtml")
         from("${projectDir}/build/dokka/html")
     }
-
 }
