@@ -54,6 +54,7 @@ tasks {
 
     create<Jar>("javadocJar") {
         archiveClassifier.set("javadoc")
+        dependsOn("dokkaHtml")
         from("${projectDir}/build/dokka/html")
     }
 }
