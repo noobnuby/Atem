@@ -1,21 +1,22 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
 $dokka.location:com.noobnuby.plugin.api////PointingToDeclaration/-atem/com.noobnuby.plugin.api/index.html
-$dokka.location:com.noobnuby.plugin.api/Atem.AtemEventBuilder///PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem/-atem-event-builder/index.html
-$dokka.location:com.noobnuby.plugin.api/Atem.AtemEventBuilder/AtemEventBuilder/#/PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem/-atem-event-builder/-atem-event-builder.html
-$dokka.location:com.noobnuby.plugin.api/Atem.AtemEventBuilder/leftClickAirEvent/#/PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem/-atem-event-builder/left-click-air-event.html
-$dokka.location:com.noobnuby.plugin.api/Atem.AtemEventBuilder/leftClickAirEvent/#kotlin.Function1[org.bukkit.entity.Player,kotlin.Unit]/PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem/-atem-event-builder/left-click-air-event.html
-$dokka.location:com.noobnuby.plugin.api/Atem.AtemEventBuilder/leftClickBlockEvent/#/PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem/-atem-event-builder/left-click-block-event.html
-$dokka.location:com.noobnuby.plugin.api/Atem.AtemEventBuilder/leftClickBlockEvent/#kotlin.Function1[org.bukkit.entity.Player,kotlin.Unit]/PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem/-atem-event-builder/left-click-block-event.html
-$dokka.location:com.noobnuby.plugin.api/Atem.AtemEventBuilder/leftClickEvent/#/PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem/-atem-event-builder/left-click-event.html
-$dokka.location:com.noobnuby.plugin.api/Atem.AtemEventBuilder/leftClickEvent/#kotlin.Function1[org.bukkit.entity.Player,kotlin.Unit]/PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem/-atem-event-builder/left-click-event.html
-$dokka.location:com.noobnuby.plugin.api/Atem.AtemEventBuilder/rightClickAirEvent/#/PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem/-atem-event-builder/right-click-air-event.html
-$dokka.location:com.noobnuby.plugin.api/Atem.AtemEventBuilder/rightClickAirEvent/#kotlin.Function1[org.bukkit.entity.Player,kotlin.Unit]/PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem/-atem-event-builder/right-click-air-event.html
-$dokka.location:com.noobnuby.plugin.api/Atem.AtemEventBuilder/rightClickBlockEvent/#/PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem/-atem-event-builder/right-click-block-event.html
-$dokka.location:com.noobnuby.plugin.api/Atem.AtemEventBuilder/rightClickBlockEvent/#kotlin.Function1[org.bukkit.entity.Player,kotlin.Unit]/PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem/-atem-event-builder/right-click-block-event.html
-$dokka.location:com.noobnuby.plugin.api/Atem.AtemEventBuilder/rightClickEvent/#/PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem/-atem-event-builder/right-click-event.html
-$dokka.location:com.noobnuby.plugin.api/Atem.AtemEventBuilder/rightClickEvent/#kotlin.Function1[org.bukkit.entity.Player,kotlin.Unit]/PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem/-atem-event-builder/right-click-event.html
 $dokka.location:com.noobnuby.plugin.api/Atem///PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem/index.html
-$dokka.location:com.noobnuby.plugin.api/Atem/register/#org.bukkit.Material#kotlin.Int#net.kyori.adventure.text.Component#kotlin.collections.List[net.kyori.adventure.text.Component]?#kotlin.Function1[com.noobnuby.plugin.api.Atem.AtemEventBuilder,kotlin.Unit]/PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem/register.html
+$dokka.location:com.noobnuby.plugin.api/Atem/onPlayerInteract/#org.bukkit.event.player.PlayerInteractEvent/PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem/on-player-interact.html
+$dokka.location:com.noobnuby.plugin.api/Atem/register/#org.bukkit.Material#kotlin.Int#net.kyori.adventure.text.Component#kotlin.collections.List[net.kyori.adventure.text.Component]?#kotlin.Function1[com.noobnuby.plugin.api.AtemEventBuilder,kotlin.Unit]?/PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem/register.html
+$dokka.location:com.noobnuby.plugin.api/AtemEventBuilder///PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem-event-builder/index.html
+$dokka.location:com.noobnuby.plugin.api/AtemEventBuilder/AtemEventBuilder/#/PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem-event-builder/-atem-event-builder.html
+$dokka.location:com.noobnuby.plugin.api/AtemEventBuilder/leftClickAirEvent/#/PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem-event-builder/left-click-air-event.html
+$dokka.location:com.noobnuby.plugin.api/AtemEventBuilder/leftClickAirEvent/#kotlin.Function1[org.bukkit.entity.Player,kotlin.Unit]/PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem-event-builder/left-click-air-event.html
+$dokka.location:com.noobnuby.plugin.api/AtemEventBuilder/leftClickBlockEvent/#/PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem-event-builder/left-click-block-event.html
+$dokka.location:com.noobnuby.plugin.api/AtemEventBuilder/leftClickBlockEvent/#kotlin.Function1[org.bukkit.entity.Player,kotlin.Unit]/PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem-event-builder/left-click-block-event.html
+$dokka.location:com.noobnuby.plugin.api/AtemEventBuilder/leftClickEvent/#/PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem-event-builder/left-click-event.html
+$dokka.location:com.noobnuby.plugin.api/AtemEventBuilder/leftClickEvent/#kotlin.Function1[org.bukkit.entity.Player,kotlin.Unit]/PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem-event-builder/left-click-event.html
+$dokka.location:com.noobnuby.plugin.api/AtemEventBuilder/rightClickAirEvent/#/PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem-event-builder/right-click-air-event.html
+$dokka.location:com.noobnuby.plugin.api/AtemEventBuilder/rightClickAirEvent/#kotlin.Function1[org.bukkit.entity.Player,kotlin.Unit]/PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem-event-builder/right-click-air-event.html
+$dokka.location:com.noobnuby.plugin.api/AtemEventBuilder/rightClickBlockEvent/#/PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem-event-builder/right-click-block-event.html
+$dokka.location:com.noobnuby.plugin.api/AtemEventBuilder/rightClickBlockEvent/#kotlin.Function1[org.bukkit.entity.Player,kotlin.Unit]/PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem-event-builder/right-click-block-event.html
+$dokka.location:com.noobnuby.plugin.api/AtemEventBuilder/rightClickEvent/#/PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem-event-builder/right-click-event.html
+$dokka.location:com.noobnuby.plugin.api/AtemEventBuilder/rightClickEvent/#kotlin.Function1[org.bukkit.entity.Player,kotlin.Unit]/PointingToDeclaration/-atem/com.noobnuby.plugin.api/-atem-event-builder/right-click-event.html
 com.noobnuby.plugin.api
 
