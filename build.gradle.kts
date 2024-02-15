@@ -8,7 +8,7 @@ plugins {
     `maven-publish`
 }
 
-group = "com.noobnuby.plugin.api"
+group = "com.github.noobnuby"
 version = "1.0.0"
 
 repositories {
@@ -27,18 +27,7 @@ java {
     }
 }
 
-if ("api" == project.name) {
-    publishing {
-        publications {
-            create<MavenPublication>("mavenJava") {
-                groupId = "com.noobnuby"
-                artifactId = "Atem"
-                version = rootProject.version.toString()
-                artifact(tasks.shadowJar)
-            }
-        }
-    }
-}
+
 
 tasks {
     withType<KotlinCompile> {
@@ -57,7 +46,7 @@ tasks {
     shadowJar {
         destinationDirectory.set(file("$rootDir/target"))
         archiveClassifier.set("")
-        archiveFileName.set("Atem"+"-" + project.version + ".jar")
+        archiveFileName.set("Atem" + "-" + project.version + ".jar")
     }
 
     create<Jar>("javadocJar") {
@@ -67,7 +56,6 @@ tasks {
     }
 
 }
-
 
 
 //publishing {
