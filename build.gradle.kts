@@ -3,8 +3,9 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     kotlin("jvm") version "1.9.22"
     id("org.jetbrains.dokka") version "1.9.10"
+    id("com.github.johnrengelman.shadow") version "8.1.1"
 //    id("signing")
-//    `maven-publish`
+    `maven-publish`
 }
 
 group = "com.noobnuby.plugin.api"
@@ -26,6 +27,19 @@ java {
     }
 }
 
+if ("api" == project.name) {
+    publishing {
+        publications {
+            create<MavenPublication>("mavenJava") {
+                groupId = "com.noobnuby"
+                artifactId = "Atem"
+                version = rootProject.version.toString()
+                artifact(tasks.shadowJar)
+            }
+        }
+    }
+}
+
 tasks {
     withType<KotlinCompile> {
         kotlinOptions.jvmTarget = "17"
@@ -40,12 +54,21 @@ tasks {
         from(sourceSets["main"].allSource)
     }
 
+    shadowJar {
+        destinationDirectory.set(file("$rootDir/target"))
+        archiveClassifier.set("")
+        archiveFileName.set("Atem"+"-" + project.version + ".jar")
+    }
+
     create<Jar>("javadocJar") {
         archiveClassifier.set("javadoc")
         dependsOn("dokkaHtml")
         from("${projectDir}/build/dokka/html")
     }
+
 }
+
+
 
 //publishing {
 //    publications {
